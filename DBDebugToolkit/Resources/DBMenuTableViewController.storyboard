@@ -24,7 +24,7 @@
                                         <rect key="frame" x="0.0" y="56" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LVj-2U-zJY" id="2Qh-Yc-Wqe">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Performance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="az9-7O-9y6">
@@ -232,7 +232,7 @@
                             <outlet property="delegate" destination="YH8-ay-XNT" id="WtV-iF-rP7"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="DBDebugToolkit" id="48o-9C-Bya">
+                    <navigationItem key="navigationItem" title="Debugging Options" id="48o-9C-Bya">
                         <barButtonItem key="leftBarButtonItem" title="Close" id="8BW-W3-rXm">
                             <connections>
                                 <action selector="closeButtonAction:" destination="YH8-ay-XNT" id="X8o-4e-DIN"/>
