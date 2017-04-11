@@ -114,8 +114,9 @@ static const NSInteger DBFilesTableViewControllerNextSizeAbbreviationThreshold =
 }
 
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    NSString *fullPath = [self fullPathForElementWithIndexPath:indexPath];
-    return [[NSFileManager defaultManager] isDeletableFileAtPath:fullPath];
+    return NO;
+//    NSString *fullPath = [self fullPathForElementWithIndexPath:indexPath];
+//    return [[NSFileManager defaultManager] isDeletableFileAtPath:fullPath];
 }
 
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {

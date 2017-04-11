@@ -22,17 +22,8 @@
                             <outlet property="delegate" destination="e4t-xH-n2r" id="n7o-h2-g8p"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Cookies" id="ZB6-bP-pU2">
-                        <barButtonItem key="rightBarButtonItem" title="Clear" id="Hcw-am-GBJ">
-                            <connections>
-                                <action selector="clearButtonAction:" destination="e4t-xH-n2r" id="VCI-qX-eY5"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Cookies" id="ZB6-bP-pU2"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
-                    <connections>
-                        <outlet property="clearButton" destination="Hcw-am-GBJ" id="ggW-Tk-x0w"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fV5-Bf-xHI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

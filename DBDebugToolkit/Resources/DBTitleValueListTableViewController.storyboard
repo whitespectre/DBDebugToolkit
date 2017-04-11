@@ -23,17 +23,8 @@
                             <outlet property="delegate" destination="AVX-GU-xg4" id="XU2-h7-pN1"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Title" id="dbj-9s-EEP">
-                        <barButtonItem key="rightBarButtonItem" title="Clear" id="Hch-PD-W4e">
-                            <connections>
-                                <action selector="clearButtonAction:" destination="AVX-GU-xg4" id="mPg-9Y-b1o"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Title" id="dbj-9s-EEP"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
-                    <connections>
-                        <outlet property="clearButton" destination="Hch-PD-W4e" id="P83-GN-OfQ"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KvW-HR-eRJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

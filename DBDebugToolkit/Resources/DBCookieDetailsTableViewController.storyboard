@@ -22,13 +22,7 @@
                             <outlet property="delegate" destination="jq4-sO-Psk" id="kiU-j4-LQl"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Cookie" id="d4G-BI-dTq">
-                        <barButtonItem key="rightBarButtonItem" title="Delete" id="v2l-3Z-hJ5">
-                            <connections>
-                                <action selector="deleteButtonAction:" destination="jq4-sO-Psk" id="vHY-3S-fgA"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Cookie" id="d4G-BI-dTq"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QFB-hj-Wqy" userLabel="First Responder" sceneMemberID="firstResponder"/>

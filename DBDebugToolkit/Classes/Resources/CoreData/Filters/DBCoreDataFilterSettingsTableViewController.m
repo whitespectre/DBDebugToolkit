@@ -130,7 +130,8 @@ static NSString *const DBCoreDataFilterSettingsTableViewControllerSortingAttribu
 }
 
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    return indexPath.section == 1 && indexPath.row < self.filterSettings.filters.count;
+    return NO;
+//    return indexPath.section == 1 && indexPath.row < self.filterSettings.filters.count;
 }
 
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
