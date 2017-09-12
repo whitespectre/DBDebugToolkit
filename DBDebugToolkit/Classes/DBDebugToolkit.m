@@ -178,6 +178,7 @@ static NSString *const DBDebugToolkitObserverPresentationControllerPropertyKeyPa
     self.userInterfaceToolkit.colorizedViewBordersEnabled = NO;
     self.userInterfaceToolkit.slowAnimationsEnabled = NO;
     self.userInterfaceToolkit.showingTouchesEnabled = NO;
+    [self.userInterfaceToolkit setupDebuggingInformationOverlay];
 }
 
 #pragma mark - Location toolkit
@@ -254,6 +255,29 @@ static NSString *const DBDebugToolkitObserverPresentationControllerPropertyKeyPa
 + (void)clearUserDefaults {
     DBUserDefaultsToolkit *userDefaultsToolkit = [DBUserDefaultsToolkit new];
     [userDefaultsToolkit handleClearAction];
+}
+
+#pragma mark - Convenience methods
+
++ (void)showMenu {
+    DBDebugToolkit *toolkit = [DBDebugToolkit sharedInstance];
+    if (!toolkit.showsMenu) {
+        [toolkit showMenu];
+    }
+}
+
++ (void)showPerformanceWidget {
+    DBDebugToolkit *toolkit = [DBDebugToolkit sharedInstance];
+    DBPerformanceToolkit *performanceToolkit = toolkit.performanceToolkit;
+    performanceToolkit.isWidgetShown = YES;
+}
+
++ (void)showDebuggingInformationOverlay {
+    DBDebugToolkit *toolkit = [DBDebugToolkit sharedInstance];
+    DBUserInterfaceToolkit *userInterfaceToolkit = toolkit.userInterfaceToolkit;
+    if (userInterfaceToolkit.isDebuggingInformationOverlayAvailable) {
+        [userInterfaceToolkit showDebuggingInformationOverlay];
+    }
 }
 
 #pragma mark - Showing menu
